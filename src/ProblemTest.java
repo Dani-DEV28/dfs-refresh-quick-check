@@ -38,16 +38,16 @@ public class ProblemTest {
 
     @Test
     void testCountSeriousInfections() {
-        int actual = Problem.countSeriousInfections(sal);
-        assertEquals(3, actual);
-
-        actual = Problem.countSeriousInfections(sally);
-        assertEquals(3, actual);
-
-        actual = Problem.countSeriousInfections(samuel);
+        int actual = Problem.countSeriousInfections(samuel);
         assertEquals(1, actual);
 
         actual = Problem.countSeriousInfections(sam);
+        assertEquals(3, actual);
+
+        actual = Problem.countSeriousInfections(sal);
+        assertEquals(3, actual);
+
+        actual = Problem.countSeriousInfections(sally);
         assertEquals(3, actual);
 
         actual = Problem.countSeriousInfections(sandy);
